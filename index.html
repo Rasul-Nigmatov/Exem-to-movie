@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exem Movie</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <h1 class="movie-form__exem text-center text-danger">Movie Exem</h1>
+            <section class="movie-form">
+                <div class="container">
+                    <h2 class="visually-hidden">Movie-Search</h2>
+
+
+
+                    <!-- <div class="form-group">
+                            <select class="my-2 form-control js-searching-form_sort-select" name="sort"
+                                aria-label="Sorting">
+                                <option value="rating_desc" selected>Rating (high to low)</option>
+                                <option value="rating_asc">Rating (low to high)</option>
+                                <option value="az">A-Z</option>
+                            </select>
+                        </div> -->
+
+
+                    <!-- MODAL -->
+
+                    <!-- <section class="movie-info-modal modal fade" id="movie-info-modal" tabindex="-1"
+                            aria-labelledby="movie-info-title" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2 class="movie-info-modal__title h4 modal-title" id="movie-info-title">
+                                        </h2>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        ...
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </section> -->
+
+                </div>
+            </section>
+            <form class="js-search-form w-25" action="https://echo.htmlacademy.ru" method="GET" autocomplete="false">
+                <div class="form-group">
+                    <input class="form-control my-2 js-search-form__title-input" type="search" name="title"
+                        placeholder="Search Movie" aria-label="Title">
+                    <button class="btn btn-primary w-50 d-block" type="submit">Search</button>
+                </div>
+            </form>
+            <section class="col-md-12">
+                <!-- <h2 class="h3 text-danger text-center">Search results</h2>
+
+                <div class="alert alert-info">Use the form on the left to search for a movie</div> -->
+
+                <ul class="search-result row list-unstyled d-flex flex-wrap justify-content-between">
+
+                </ul>
+            </section>
+
+            <!-- <section class="mb-4">
+                <h2>Bookmark</h2>
+                <ul class="bookmark_movies list-group">
+
+                </ul>
+            </section> -->
+        </div>
+
+
+        <!-- <button class="danger-trash "></button> -->
+    </div>
+
+    <template id="movies-template">
+        <li class="movies-template__item col-4 mt-2">
+
+            <img class="card-img-top" style="width: 350px; height: 350px;"
+                src="https://m.media-amazon.com/images/M/MV5BNDg1NTU2OWEtM2UzYi00ZWRmLWEwMTktZWNjYWQ1NWM1OThjXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+                alt="...">
+            <div class="card-body">
+                <h5 class="card-title movie-title h3"></h5>
+                <p class="card-text movie-year">
+                    <i></i>
+                </p>
+                <p class="card-text movie-type"></p>
+            </div>
+
+        </li>
+    </template>
+
+   <!--  <template id="template-bookmark">
+        <li class="template-bookmark__item">
+            <h3 class="template-bookmark__title"></h3>
+
+            <button class="btn btn-sm btn-danger remove-trash-movie-button"></button>
+        </li>
+    </template> -->
+    <script src="js/function.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
