@@ -41,7 +41,7 @@ let movieCall = ((api = API__MOVIE) => {
 movieCall(API__MOVIE)
 
 
-elInputTitle.addEventListener("change", (evt) => {
+elInputTitle.addEventListener("input", (evt) => {
     evt.preventDefault();
     if(elInputTitle.value !== "") {
         API__MOVIE = `https://www.omdbapi.com/?apikey=7fe333a&s=${elInputTitle.value.trim()}`
